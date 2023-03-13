@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.mesa{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.centrarTarjeta{
+    width: 100%;
+    display: flex;
+    padding: 1.2rem;
+    border-radius: 0.6rem;
+    background-color: rgb(8, 152, 248);
+    margin: 0.5rem;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.tarjetaContenido{
+    font-size: 1.5rem;
+    transition: 0.5s;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden ;
+}
+
+.tarjetaContenido::selection{
+    background: transparent;
+}
+.tarjetaContenido.descubierta{
+    transform: rotateY(-180deg);
+}
