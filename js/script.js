@@ -1,4 +1,4 @@
-let tarjetas1 =  ["🐶", "🐰", "🐹", "🐭", "🐱","🐪" ];
+let tarjetas1 =  ["🐶", "🐰", "🐹", "🐭", "🐱","🐪", "👺", "🤣", "👽" ];
 
 
 let totalTarjetas = tarjetas1.concat(tarjetas1)
@@ -8,15 +8,17 @@ function reparteTarjetas() {
     
     let mesa = document.querySelector("#mesa")
 
+    let tarjetasBarajadas = barajar()
+
     mesa.innerHTML = ""
 
-    totalTarjetas.forEach( function(e) {
+    tarjetasBarajadas.forEach( function(e) {
          let tarjeta = document.createElement( "div" )
 
         tarjeta.innerHTML = 
         '<div id="mesa">' + 
 
-            '<div class="centrarTarjeta">' + 
+            '<div class="centrarTarjeta" data-valor = ' + e + '>' + 
                     '<div id="mirar" class="tarjetaContenido">' + e + '</div>'
             '</div>'
             
@@ -29,7 +31,39 @@ function reparteTarjetas() {
 
 
 function ver() {
-    this.classList.add("ver")
+    let descubiertas;
+
+    let tarjetasVolteadas = document.querySelectorAll(".ver:not(.acertaste)")
+        if (tarjetasVolteadas.length > 1) {
+            return;
+        }
+
+    this.classList.add("ver");
+
+    descubiertas = document.querySelectorAll(".ver");
+   comparar(descubiertas)
+}
+
+function comparar(compararTarjetas) {
+    if (compararTarjetas[0].dataset.valor === compararTarjetas[1].dataset.valor) {
+        exito(compararTarjetas)
+    }else{
+        sinExito(compararTarjetas)
+    }
+}
+function exito(tarjets) {
+    tarjets.forEach(
+        function (elemento) {
+            elemento.classList.add("acertaste")
+        }
+    )
+}
+function sinExito(tarjets) {
+    tarjets.forEach(
+        function (elemento) {
+            elemento.classList.remove("ver")
+        }
+    )
 }
 reparteTarjetas()
 
@@ -41,8 +75,20 @@ mostrar.forEach(
     }
 )
 
+function barajar() {
+    let resultado;
+
+    resultado = totalTarjetas.sort(
+        function () {
+            return 0.5 - Math.random()
+        }
+    )
+    return resultado;
+
+}
 
 
 
+ 
  
 
