@@ -4,36 +4,64 @@
     box-sizing: border-box;
 }
 
-.mesa{
+
+body{
+    background-color: rgba(101, 13, 13, 0.496);
+}
+
+.cajaTitulo{
     width: 100%;
-    height: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.titulo{
+    font-size: 7rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:italic;
+    color: rgb(62, 67, 154);
+}
+.mesa{
+    width: 45%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
     padding: 1rem;
 }
 
 .centrarTarjeta{
-    width: 100%;
+    width: 70px;
+    height: 70px;
     display: flex;
-    padding: 1.2rem;
+    border: 1px solid rgb(0, 255, 221);
     border-radius: 0.6rem;
-    background-color: rgb(8, 152, 248);
+    background-color: rgba(24, 155, 242, 0.716);
     margin: 0.5rem;
     cursor: pointer;
-    border: 1px solid black;
+    transition: 0.3s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    
 }
+
+
 
 .tarjetaContenido{
-    font-size: 1.5rem;
-    transition: 0.5s;
+   font-size: 1.5rem;
     transform: rotateY(-180deg);
-    backface-visibility: hidden ;
+    backface-visibility:hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.tarjetaContenido::selection{
-    background: transparent;
-}
-.tarjetaContenido.descubierta{
+
+
+.centrarTarjeta.ver{
     transform: rotateY(-180deg);
 }
+
+
