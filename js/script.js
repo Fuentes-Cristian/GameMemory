@@ -45,7 +45,7 @@ function ver() {
 }
 
 function comparar(compararTarjetas) {
-    if (compararTarjetas[0].dataset.valor === compararTarjetas[1].dataset.valor) {
+    if (compararTarjetas[0].dataSet.valor === compararTarjetas[1].dataSet.valor) {
         exito(compararTarjetas)
     }else{
         sinExito(compararTarjetas)
