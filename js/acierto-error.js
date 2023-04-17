@@ -7,11 +7,17 @@ function exito(tarjets) {
     )
 }
 function sinExito(tarjets) {
-    tarjets.forEach(
-        function (elemento) {
-            elemento.classList.remove("ver")
-        }
-    )
+    tarjets.forEach(function (elemento) {
+            elemento.classList.add("error")
+    });
+
+
+    setTimeout(function () {
+      tarjets.forEach(function(elemento) {
+        elemento.classList.remove("ver");
+        elemento.classList.remove("error")
+      })
+    }, 1000)
 }
 
 

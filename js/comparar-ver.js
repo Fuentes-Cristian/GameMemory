@@ -13,7 +13,7 @@ function ver() {
 }
 
 function comparar(compararTarjetas) {
-    if (compararTarjetas[0].dataSet.valor === compararTarjetas[1].dataSet.valor) {
+    if (compararTarjetas[0].textContent === compararTarjetas[1].textContent) {
         exito(compararTarjetas)
     }else{
         sinExito(compararTarjetas)
