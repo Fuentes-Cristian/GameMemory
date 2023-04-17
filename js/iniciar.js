@@ -7,3 +7,5 @@ mostrar.forEach(
         e.addEventListener("click", ver)
     }
 )
+
+iniciarContador();

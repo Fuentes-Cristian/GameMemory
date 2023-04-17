@@ -102,4 +102,40 @@ body{
 }
 .acertaste{
     opacity: 0;
+} 
+
+.caja-tiempo-general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-tiempo{
+    font-size:4rem;
+    color: rgba(166, 9, 9, 0.772);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 50;
+    font-stretch:semi-condensed;
+    
+}
+
+.caja-cronometro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minutos{
+    font-size:2rem;
+    color: darkslategrey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 50;
+    font-stretch:semi-condensed;
 }
