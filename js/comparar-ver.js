@@ -9,7 +9,8 @@ function ver() {
     this.classList.add("ver");
 
     descubiertas = document.querySelectorAll(".ver");
-   comparar(descubiertas)
+   comparar(descubiertas);
+   contador();
 }
 
 function comparar(compararTarjetas) {

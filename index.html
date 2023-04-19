@@ -8,14 +8,26 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
+    <section class="section">
 
-    <div class="caja-tiempo-general">
-        <h4 class="titulo-tiempo">Tiempo</h4>
-
-        <div class="caja-cronometro">
-            <span id="minutos" class="minutos">00</span>:<span id="segundos" class="minutos">00</span>
+        <!--CAJA DE CRONOMETRO-->
+        <div class="caja-tiempo-general">
+            <h4 class="titulo-tiempo">Tiempo</h4>
+    
+            <div class="caja-cronometro">
+                <span id="minutos" class="minutos">00</span>:<span id="segundos" class="minutos">00</span>
+            </div>
         </div>
-    </div>
+
+        <!--CAJA DE MOVIMIENTOS-->
+        <div class="caja-tiempo-general">
+            <h4 class="titulo-tiempo">Toques</h4>
+    
+            <div class="caja-cronometro">
+                <span id="mov" class="minutos">00</span>/<span id="movimientos" class="minutos">20</span>
+            </div>
+        </div>
+    </section>
 
     <div class="cajaTitulo">
         <div class="caja-titulos">
@@ -32,14 +44,12 @@
         <!--contenido dinamico-->
     </div>
 
-
-        
-
      <script src="./js/vars-globales.js"></script>
      <script src="./js/acierto-error.js"></script>
      <script src="./js/comparar-ver.js"></script>
      <script src="./js/baraja-reparte.js"></script>
      <script src="./js/cronometro.js"></script>
+     <script src="./js/contadorMov.js"></script>
      <script src="./js/iniciar.js"></script>
 </body>
 </html>
