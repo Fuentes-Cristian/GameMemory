@@ -10,6 +10,15 @@ function iniciarContador(params) {
         if (segundos < 0) {
             segundos = 59
             minutos = minutos - 1;
+        }else if (segundos === 00) {
+            
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Se te acabo el tiempo 😣!',
+                    footer: '<a href = "./index.html"><button id = "btn-reiniciar-js" class ="btn-reiniciar-js">Reiniciar</button></a>'
+                  })
+            
         }
         if (minutos < 0) {
             segundos = 0
@@ -31,9 +40,6 @@ function iniciarContador(params) {
 
 
     }
-
-
-
 
  cronometro = setInterval(actualizaContador, 1000)
 }
