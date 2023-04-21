@@ -3,12 +3,15 @@ function exito(tarjets) {
     tarjets.forEach(
         function (elemento) {
             elemento.classList.add("acertaste")
+
+            document.querySelector("#acierto").cloneNode().play()
         }
     )
 }
 function sinExito(tarjets) {
     tarjets.forEach(function (elemento) {
-            elemento.classList.add("error")
+            elemento.classList.add("error");
+            document.querySelector("#error").play()
     });
 
 
