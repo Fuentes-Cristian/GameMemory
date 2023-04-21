@@ -4,7 +4,7 @@ function exito(tarjets) {
         function (elemento) {
             elemento.classList.add("acertaste")
 
-            document.querySelector("#acierto").cloneNode().play()
+            document.querySelector("#acierto").play()
         }
     )
 }
@@ -28,4 +28,3 @@ function sinExito(tarjets) {
 
  
  
-

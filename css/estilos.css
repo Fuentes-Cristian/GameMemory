@@ -141,7 +141,6 @@ body{
     transition: 0.3s;
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    
 }
 
 
@@ -208,4 +207,14 @@ body{
     background-color: rgba(95, 52, 226, 0.809);
     border-radius: 3px;
     text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-footer{
+   padding:1rem;
 }

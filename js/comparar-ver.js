@@ -13,8 +13,11 @@ function ver() {
    contador();
 }
 
+
+
+
 function comparar(compararTarjetas) {
-    if (compararTarjetas[0].textContent === compararTarjetas[1].textContent) {
+    if (compararTarjetas[0].dataset.valor === compararTarjetas[1].dataset.valor) {
         exito(compararTarjetas)
     }else{
         sinExito(compararTarjetas)
