@@ -21,6 +21,7 @@ function iniciarContador(params) {
             )
             
         }
+
         if (minutos < 0) {
             segundos = 0
             minutos = 0;

@@ -208,13 +208,3 @@ body{
     border-radius: 3px;
     text-align: center;
 }
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.caja-footer{
-   padding:1rem;
-}
